@@ -2,7 +2,6 @@
 import { jsx } from '@emotion/core'
 import React from 'react'
 import tw, { styled } from 'twin.macro'
-import { AppIcon } from './components'
 import {
    FaCodepen,
    FaGithub,
@@ -11,6 +10,8 @@ import {
    FaBehance,
    FaDev,
 } from 'react-icons/fa'
+
+import { AppIcon, Window } from './components'
 
 const App = () => {
    const apps = React.useMemo(
@@ -26,7 +27,9 @@ const App = () => {
    )
    return (
       <Container>
-         <main>main</main>
+         <main>
+            <Window />
+         </main>
          <footer css={tw`flex items-center`}>
             <ul
                css={tw`space-x-3 pl-2 flex items-center h-16 m-auto bg-white rounded`}
